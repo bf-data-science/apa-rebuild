@@ -23,7 +23,9 @@ us-nielsen
 	|-- recreate-nielsen-apa.Rmd
 |-- results
 	|-- nielsen-data-jdtw-apa-oldmethod.csv
+	|-- nielsen-data-total-apa-oldmethod.csv
 	|-- nielsen-data-jdtw-weeklyvols-oldmethod.csv
+	|-- nielsen-data-total-weeklyvols-oldmethod.csv
 
 ```
 
@@ -43,7 +45,11 @@ This script also includes a sandbox component to it where newer methodologies ar
 <br>
 **`nielsen-data-jdtw-apa-oldmethod.csv`** is a csv file warehousing the results of the APA algorithm for every market from **`total-market-list.csv`**. Currently, this data only reflects JDTW 750ml and 1.75l. However, over time the list of brands covered will continue to grow and this document will be updated to reflect.
 
+**`nielsen-data-total-apa-oldmethod.csv`** is a csv file warehousing the results of the APA algorithm for every market from **`total-market-list.csv`**. Currently, this data reflects the top 150 brands by volume across the US as well as all BF portfolio brands. Over time the list of brands covered will continue to grow and this document will be updated to reflect.
+
 **`nielsen-data-jdtw-weeklyvols-oldmethod.csv`** is a csv file storing adjusted weekly price and normalized volume levels for every market. Currently, this data only reflects JDTW 750ml and 1.75l. However, over time the list of brands covered will continue to grow and this document will be updated to reflect.
+
+**`nielsen-data-total-weeklyvols-oldmethod.csv`** is a csv file storing adjusted weekly price and normalized volume levels for every market. Currently, this data reflects the top 150 brands by volume across the US as well as all BF portfolio brands. Over time the list of brands covered will continue to grow and this document will be updated to reflect.
 
 ##### **US Open Market APA Algorithm**
 The APA algorithm for the US Open Markets takes weekly-level volume and adjusts it based on the relevant categories performance for that same week against the average of all weeks for the category. If the week is typically strong for the category, then the brand's volume for that week will be reduced (e.g. holiday periods). The opposite is true for weeks where category volume is below average, which will increase that week's volume for the brand.
